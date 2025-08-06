@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  line-height: 1.6;
+}
+.hero {
+  background: linear-gradient(135deg, #4158D0 0%, #C850C0 60%, #FFCC70 100%);
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.hero .product-hero {
+  max-width: 120px;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.cta-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #4158D0;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #f2f2f2;
+}
+.benefits, .testimonial, .guarantee {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.benefits h2, .testimonial h2, .guarantee h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #4158D0;
+}
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+.benefits li {
+  margin-bottom: 0.8rem;
+}
+.testimonial blockquote {
+  font-style: italic;
+  margin: 1rem auto;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-left: 5px solid #C850C0;
+}
+.testimonial span {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.guarantee .wide-image {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+.visuals {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.visuals img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+}
+.footer-cta {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  text-align: center;
+}
+.footer-cta .product-footer {
+  max-width: 180px;
+  margin-bottom: 1rem;
+}
+.footer-cta .cta-button {
+  background-color: #C850C0;
+  color: #fff;
+}
+.footer-cta .cta-button:hover {
+  background-color: #b03ea6;
+}
+.footer-cta .powered {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+.footer-cta .logo {
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  .visuals img {
+    max-width: 100%;
+  }
+}
