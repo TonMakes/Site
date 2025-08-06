@@ -90,38 +90,40 @@ body {
 }
 .footer-cta {
   background-color: #f0f0f0;
-  padding: 2rem;
+  padding: 3rem 1rem;
   text-align: center;
 }
+
 .footer-cta .product-footer {
-  max-width: 180px;
-  margin-bottom: 1rem;
+  max-width: 220px;
+  margin: 0 auto 1.5rem;
+  display: block;
 }
+
 .footer-cta .cta-button {
   background-color: #C850C0;
   color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
 }
+
 .footer-cta .cta-button:hover {
   background-color: #b03ea6;
 }
+
 .footer-cta .powered {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 0.85rem;
+  color: #666;
 }
+
 .footer-cta .logo {
-  height: 20px;
+  height: 48px;
   vertical-align: middle;
-  margin-left: 5px;
-}
-@media (max-width: 600px) {
-  .hero h1 { font-size: 2rem; }
-  .hero p { font-size: 1rem; }
-  .cta-button {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.95rem;
-  }
-  .visuals img {
-    max-width: 100%;
-  }
+  margin-left: 6px;
 }
