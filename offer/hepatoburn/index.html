@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,20 +6,24 @@
   <title>Support Healthy Liver Function | HepatoBurn</title>
   <link rel="stylesheet" href="style.css">
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17390270778"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-17390270778');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17390270778"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17390270778');
+  </script>
 </head>
 <body>
   <div class="hero">
     <img src="imagens/HepatoBurn-1Bottle-2.png" alt="HepatoBurn Bottle" class="product-hero">
     <h1>Boost Your Liver Health Naturally</h1>
     <p>Discover the powerful blend behind HepatoBurn – the liver support supplement trusted by thousands.</p>
-    <a href="https://91509lyi-l2gwrdcu9dg0x8oph.hop.clickbank.net/?&traffic_source=google&traffic_type=paid&campaign=hepatoburn_pesquisa&creative=headline1&ad=anuncio_01" class="cta-button" target="_blank">👉 Claim Your Exclusive Offer Now</a>
+    <a href="https://91509lyi-l2gwrdcu9dg0x8oph.hop.clickbank.net/?&traffic_source=google&traffic_type=paid&campaign=hepatoburn_pesquisa&creative=headline1&ad=anuncio_01"
+       class="cta-button"
+       target="_blank"
+       onclick="return gtag_report_conversion(this.href);">
+       👉 Claim Your Exclusive Offer Now</a>
   </div>
 
   <section class="visuals">
@@ -53,8 +56,28 @@
 
   <div class="footer-cta">
     <img src="imagens/HepatoBurn-3Bottles-2.png" alt="HepatoBurn Bottles" class="product-footer">
-    <a href="https://91509lyi-l2gwrdcu9dg0x8oph.hop.clickbank.net/?&traffic_source=google&traffic_type=paid&campaign=hepatoburn_pesquisa&creative=headline1&ad=anuncio_01" class="cta-button" target="_blank">🔥 Get Started Today</a>
+    <a href="https://91509lyi-l2gwrdcu9dg0x8oph.hop.clickbank.net/?&traffic_source=google&traffic_type=paid&campaign=hepatoburn_pesquisa&creative=headline1&ad=anuncio_01"
+       class="cta-button"
+       target="_blank"
+       onclick="return gtag_report_conversion(this.href);">
+       🔥 Get Started Today</a>
     <p class="powered">Powered by <img src="imagens/HepatoBurn-Logo-1.png" alt="HepatoBurn Logo" class="logo"></p>
   </div>
+
+  <!-- Event snippet for Clique no botão de afiliado -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-17390270778/Xyr8CO2NqvwaELryqeRA',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
 </body>
 </html>
