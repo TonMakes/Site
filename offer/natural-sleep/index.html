@@ -6,13 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lose Weight While You Sleep | SleepLean</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17390270778"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17390270778');
+  </script>
 </head>
 <body>
   <header>
     <img src="assets/SLEEPLEAN_FB_1200x628.png" alt="SleepLean Banner" style="width:100%; max-width:1200px; display:block; margin:0 auto;">
     <h1>🔥 Burn Fat While You Sleep</h1>
     <p>Discover the natural solution helping thousands lose weight effortlessly at night.</p>
-    <a href="https://56febazkqiv8vjenn7l9q8hid1.hop.clickbank.net" target="_blank" class="cta-button">💤 Watch The Video Now</a>
+    <a href="https://56febazkqiv8vjenn7l9q8hid1.hop.clickbank.net" target="_blank" class="cta-button outbound" onclick="return gtag_report_conversion(this.href);">💤 Watch The Video Now</a>
   </header>
 
   <section class="highlights">
@@ -37,12 +46,61 @@
 
   <div class="cta-container">
     <img src="assets/SLEEPlEAN_336x280.jpg" alt="Offer" style="max-width:300px; display:block; margin: 0 auto 1rem;">
-    <a href="https://56febazkqiv8vjenn7l9q8hid1.hop.clickbank.net" target="_blank" class="cta-button">🎯 Try SleepLean Now</a>
+    <a href="https://56febazkqiv8vjenn7l9q8hid1.hop.clickbank.net" target="_blank" class="cta-button outbound" onclick="return gtag_report_conversion(this.href);">🎯 Try SleepLean Now</a>
     <p>Limited-time access. Secure your bottle while supplies last.</p>
   </div>
 
   <footer>
     <p>This site is not a part of the Google website or Google Inc. Additionally, this site is NOT endorsed by Google in any way.</p>
   </footer>
+
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17390270778/sleep_cta_click',
+          'event_callback': callback
+      });
+      return false;
+    }
+
+    function getQueryParams() {
+      var params = {}, queryString = window.location.search.substring(1), pairs = queryString.split('&');
+      for (var i = 0; i < pairs.length; i++) {
+        if (!pairs[i]) continue;
+        var pair = pairs[i].split('=');
+        params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+      }
+      return params;
+    }
+
+    (function() {
+      var params = getQueryParams();
+      var gclid = params['gclid'] || '';
+      var utm_source = params['utm_source'] || 'google';
+      var utm_medium = params['utm_medium'] || 'cpc';
+      var utm_campaign = params['utm_campaign'] || 'sleeplean';
+      var utm_content = params['utm_content'] || '';
+
+      var links = document.querySelectorAll('a.outbound');
+      links.forEach(function(a) {
+        try {
+          var url = new URL(a.href);
+          if (!url.searchParams.has('utm_source')) url.searchParams.set('utm_source', utm_source);
+          if (!url.searchParams.has('utm_medium')) url.searchParams.set('utm_medium', utm_medium);
+          if (!url.searchParams.has('utm_campaign')) url.searchParams.set('utm_campaign', utm_campaign);
+          if (utm_content && !url.searchParams.has('utm_content')) url.searchParams.set('utm_content', utm_content);
+          if (gclid) {
+            url.searchParams.set('tid', gclid);
+          }
+          a.href = url.toString();
+        } catch(e) { }
+      });
+    })();
+  </script>
 </body>
 </html>
