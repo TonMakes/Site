@@ -127,3 +127,24 @@ body {
   vertical-align: middle;
   margin-left: 6px;
 }
+
+/* Centralizar a seção Choose Your Package */
+#pricing {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#pricing p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+#pricing .cta-button {
+  display: inline-block;
+  margin-top: 10px;
+}
