@@ -91,3 +91,12 @@ li { margin: 8px 0; }
   .hero-img{ max-width: 96%; }
   .thumbs-grid{ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 }
+/* Animação de piscar para a badge */
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+.badge {
+  animation: blink 1.2s infinite;
+}
