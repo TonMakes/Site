@@ -86,3 +86,27 @@ footer{margin:40px 0 10px;color:var(--muted);font-size:12px;text-align:center}
   .back-to-top{transition:none}
   .badge{animation:none}
 }
+
+/* Logo */
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logo {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+/* Logo redondo */
+.logo {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+
+  border-radius: 50%;   /* deixa redondo */
+  background: #fff;     /* fundo branco para contraste (opcional) */
+  padding: 10px;        /* espaço interno para não cortar as bordas */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra suave (moderno) */
+}
